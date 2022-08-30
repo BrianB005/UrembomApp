@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="5dp"
+    android:background="@color/pink"
+    tools:ignore="HardcodedText"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="3dp"
+    >
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@null"
+        android:src="@drawable/makeup7"
+        android:scaleType="centerCrop"
+        android:id="@+id/cart_item_image" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Generic ear piece"
+            android:textColor="@color/deep_pink"
+            android:textStyle="bold"
+            android:textSize="15sp"
+
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:id="@+id/cart_item_name"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kshs. "
+            android:textColor="#1065A5"
+            android:textStyle="bold"
+            android:textSize="15sp"
+
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="687"
+            android:textColor="@color/deep_blue"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/cart_item_price"
+            android:paddingEnd="5dp"
+            android:paddingStart="0dp"
+            />
+    <!--    <Spinner-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/colors_spinner"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qty"
+            android:textColor="@color/deep_blue"
+            android:textSize="15sp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/quantity_spinner"
+            android:dropDownWidth="70dp"
+            android:background="@drawable/spinner_bg"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

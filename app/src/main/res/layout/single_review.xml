@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardCodedText"
+    android:background="#F7F9FA"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brian"
+            android:textSize="19sp"
+            android:textColor="@color/deep_blue"
+            android:fontFamily="@font/droid_sans_bold"
+            android:id="@+id/reviewer_name"
+            android:layout_marginEnd="12dp"
+            />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:progressTint="@color/deep_pink"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:id="@+id/review_rating"
+            android:rating="3"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#13293A"
+        android:textSize="18sp"
+        android:text="This is indeed a great product"
+        android:paddingBottom="3dp"
+        android:id="@+id/review_comment"
+        />
+
+
+
+
+</LinearLayout>

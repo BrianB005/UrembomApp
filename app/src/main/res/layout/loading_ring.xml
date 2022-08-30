@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#CFC7C7"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardCodedText"
+    android:gravity="center">
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="100dp"
+        android:backgroundTint="@color/deep_pink"
+        android:id="@+id/loader"
+        android:elevation="30dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOADING..."
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-thin"
+            android:id="@+id/loading_text"
+            />
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
